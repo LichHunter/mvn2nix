@@ -1,5 +1,4 @@
-{ nixpkgs ? (import ./nix/sources.nix).nixpkgs,
-  system ? builtins.currentSystem }:
+{ nixpkgs ? (import ./nix/sources.nix).nixpkgs, system ? builtins.currentSystem }:
 let
   sources = import ./nix/sources.nix;
   pkgs = import nixpkgs {

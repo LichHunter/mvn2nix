@@ -1,5 +1,5 @@
 self: super: {
-  jdk = super.jdk11_headless;
+  jdk = super.jdk17_headless;
 
   mvn2nix = self.callPackage ./derivation.nix { };
 

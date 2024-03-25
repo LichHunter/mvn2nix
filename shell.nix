@@ -16,7 +16,7 @@ let
   };
 in pkgs.mkShell {
   name = "mvn2nix-shell";
-  buildInputs = with pkgs; [ jdk11_headless maven gh-md-toc ];
+  buildInputs = with pkgs; [ jdk17_headless maven gh-md-toc ];
 
   # we need to set M2_HOME to our Maven which uses JDK11
   M2_HOME = pkgs.maven;
